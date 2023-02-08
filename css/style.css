@@ -3,3 +3,126 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+html {
+    font-family: 'Open Sans', sans-serif;
+}
+
+:root {
+    --text-lightgrey:  rgb(125, 127, 132);
+    --content-bg-light: rgb(20, 25, 34);
+    --footer-bg: rgb(40, 40, 40);
+    --lime-green: rgb(173, 255, 47);
+    --sidebar-width: 60px;
+    --footer-height: 100px;
+}
+
+/* Debug */
+
+
+
+/* Utility */
+
+.flex {
+    display: flex;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.text-grey {
+    color: var(--text-lightgrey);
+}
+
+.white {
+    color: white;
+}
+
+.capitalize {
+    text-transform: capitalize;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.ls-none {
+    list-style: none;
+}
+
+
+/* CSS */
+
+/* Main */
+
+main {
+    height: calc(100vh - var(--footer-height));
+}
+
+/* Aside */
+
+#sidebar {
+    width: var(--sidebar-width);
+    background-color: black;
+}
+
+/* Content */
+
+#content {
+    background-color: var(--content-bg-light);
+    width: calc(100% - var(--sidebar-width));
+    padding: calc(100px + 1rem) 1rem 2rem;
+}
+
+#cta {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100px;
+    position: fixed;
+    top: 0;
+    left: var(--sidebar-width);
+    width: calc(100% - var(--sidebar-width));
+}
+
+.navbar {
+    gap: 2rem;
+}
+
+/* Footer */
+
+footer {
+    background-color: var(--footer-bg);
+    height: var(--footer-height);
+}
+
+/* Responsive */
+
+/* Size XS */
+
+@media screen and (min-width:576px) {
+    :root {
+        --sidebar-width: 200px;
+    }
+}
+
+/* Size S */
+
+@media screen and (min-width:768px) {
+    
+}
+
+/* Size MD */
+
+@media screen and (min-width:992px) {
+    
+}
+
+/* Size LG */
+
+@media screen and (min-width:1200px) {
+    
+}
