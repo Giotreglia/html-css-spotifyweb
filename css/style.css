@@ -19,7 +19,16 @@ html {
 
 /* Debug */
 
+.debug .music-item-container {
+    height: 200px;
+    border: 1px solid white;
+}
 
+.debug .music-item {
+    background-color: gold;
+    height: 100%;
+    width: 100%;
+}
 
 /* Utility */
 
@@ -31,8 +40,16 @@ html {
     justify-content: space-between;
 }
 
+.just-center {
+    justify-content: center;
+}
+
 .wrap {
     flex-wrap: wrap;
+}
+
+.overflow-scroll {
+    overflow-y: scroll;
 }
 
 .text-grey {
@@ -54,6 +71,14 @@ html {
 .ls-none {
     list-style: none;
 }
+
+.margintop2 {
+    margin-top: 2rem;
+}
+
+.marginbottom2 {
+    margin-bottom: 2rem;
+} 
 
 
 /* CSS */
@@ -89,7 +114,12 @@ main {
 }
 
 .navbar {
-    gap: 2rem;
+    gap: 1rem;
+}
+
+.music-item-container {
+    width: 50%;
+    padding: 1rem;
 }
 
 /* Footer */
@@ -118,11 +148,19 @@ footer {
 /* Size MD */
 
 @media screen and (min-width:992px) {
+
+    .music-item-container {
+        width: 25%;
+    }
     
 }
 
 /* Size LG */
 
 @media screen and (min-width:1200px) {
+
+    .music-item-container {
+        width: calc(100% / 6);
+    }
     
 }
