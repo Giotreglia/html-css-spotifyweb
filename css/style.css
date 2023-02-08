@@ -228,6 +228,11 @@ main {
     display: block;
 }
 
+.music-item span {
+    margin-top: 0.5rem;
+    display: inline-block;
+}
+
 /* Footer */
 
 footer {
