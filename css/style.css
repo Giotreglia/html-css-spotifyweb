@@ -207,10 +207,6 @@ main {
     font-weight: bold;
 }
 
-.navbar {
-    gap: 1rem;
-}
-
 .music-item-container {
     width: 50%;
     padding: 1rem;
