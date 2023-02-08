@@ -96,13 +96,37 @@ html {
     list-style: none;
 }
 
+a {
+    text-decoration: none;
+}
+
 .margintop2 {
     margin-top: 2rem;
 }
 
 .marginbottom2 {
     margin-bottom: 2rem;
-} 
+}
+
+.margineleft2 {
+    margin-left: 2rem;
+}
+
+.margineleft1 {
+    margin-left: 1rem;
+}
+
+.margineleft0-5 {
+    margin-left: 0.5rem;
+}
+
+.hidden {
+    display: none;
+}
+
+.font08 {
+    font-size: 0.8rem;
+}
 
 
 /* CSS */
@@ -128,7 +152,7 @@ main {
     padding: 1rem;
 }
 
-#logo-container img {
+#logo-small {
     width: 30px;
     margin: auto;
 }
@@ -138,18 +162,23 @@ main {
 }
 
 #user-img {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
     background-color: var(--text-lightgrey);
 }
 
 #user-img i {
     display: inline-block;
-    line-height: 40px;
+    line-height: 30px;
     text-align: center;
     width: 100%;
 }
+
+#logo-big {
+    width: 150px;
+}
+
 
 /* Content */
 
@@ -190,7 +219,24 @@ footer {
 
 @media screen and (min-width:576px) {
     :root {
-        --sidebar-width: 200px;
+        --sidebar-width: 250px;
+    }
+
+    #sidebar li {
+        width: 100%;
+    }
+
+    .hidden {
+        display: block;
+    }
+
+    #logo-small {
+        display: none;
+    }
+
+    .borderbottom-grey {
+        border-bottom: 1px solid var(--text-lightgrey);
+        padding-bottom: 10px;
     }
 }
 
