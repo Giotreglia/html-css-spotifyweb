@@ -17,19 +17,6 @@ html {
     --footer-height: 100px;
 }
 
-/* Debug */
-
-.debug .music-item-container {
-    height: 200px;
-    border: 1px solid white;
-}
-
-.debug .music-item {
-    background-color: gold;
-    height: 100%;
-    width: 100%;
-}
-
 /* Utility */
 
 .block {
@@ -100,6 +87,10 @@ a {
     text-decoration: none;
 }
 
+.margintop1 {
+    margin-top: 1rem;
+}
+
 .margintop2 {
     margin-top: 2rem;
 }
@@ -128,11 +119,23 @@ a {
     font-size: 0.8rem;
 }
 
+.text-center {
+    text-align: center;
+}
+
 .btn {
     padding: 0.5rem 2rem;
     border-radius: 2rem;
     border: solid 1px white;
     font-size: 0.9rem;
+}
+
+.rounded {
+    border-radius: 50%;
+}
+
+.overflow-hidden {
+    overflow: hidden;
 }
 
 
@@ -209,7 +212,12 @@ main {
 
 .music-item-container {
     width: 50%;
-    padding: 1rem;
+    padding: 0.5rem;
+}
+
+.music-item img {
+    width: 100%;
+    display: block;
 }
 
 /* Footer */
