@@ -67,6 +67,10 @@ html {
     color: var(--text-lightgrey);
 }
 
+.bg-grey {
+    background-color: var(--text-lightgrey);
+}
+
 .white {
     color: white;
 }
@@ -169,6 +173,10 @@ main {
 
 .nav-top-container i {
     font-size: 1.3rem;
+}
+
+.nav-icon {
+    width: 30px;
 }
 
 #user-img {
