@@ -57,14 +57,14 @@
     
                     <!-- Playlist list -->
     
-                    <h2 class="white marginleft1">Playlist</h2>
+                    <h2 class="white marginleft1 hidden">Playlist</h2>
 
-                    <div class="flex align-center margintop1">
-                        <div id="add-pl" class="bg-grey marginleft1"><i class="fa-solid fa-plus"></i></div>
-                        <span class="block text-grey marginleft1">Crea Playlist</span>
+                    <div class="flex align-center margintop1 hidden">
+                        <div id="add-pl" class="bg-grey marginleft1 inline-block"><i class="fa-solid fa-plus"></i></div>
+                        <span class="block text-grey marginleft1 inline-block">Crea Playlist</span>
                     </div>
 
-                    <ul id="pl-list" class="marginleft1 margintop1 overflow-scroll">
+                    <ul id="pl-list" class="marginleft1 margintop1 overflow-scroll hidden">
                         <li><a class="a-none text-grey line-height2-5" href="">Nome Playlist</a></li>
                         <li><a class="a-none text-grey line-height2-5" href="">Nome Playlist</a></li>
                         <li><a class="a-none text-grey line-height2-5" href="">Nome Playlist</a></li>
@@ -113,7 +113,7 @@
 
             <!-- Content navbar -->
             <nav class="text-grey capitalize bold font08">
-                <ul class="navbar flex ls-none just-center wrap gap2">
+                <ul class="navbar flex ls-none just-center wrap gap1">
                     <li class="nav-item"><a class="a-none text-grey" href="">IN EVIDENZA</a></li>
                     <li class="nav-item"><a class="a-none text-grey" href="">PODCAST</a></li>
                     <li class="nav-item"><a class="a-none text-grey" href="">CLASSIFICHE</a></li>
@@ -228,34 +228,34 @@
     <footer>
         <div class="footer-container flex space-between align-center">
             <div class="footer-left flex space-between align-center">
-                <img id="playbar-img" src="img/sinister.jpeg" alt="copertina sinister">
-                <div class="marginleft1 marginright2">
-                    <h4 class="white">Sinister</h4>
-                    <span class="text-grey bold">Nome Brano</span>
+                <a class="height100" href="#"><img id="playbar-img" src="img/sinister.jpeg" alt="copertina sinister"></a>
+                <div id="songname">
+                    <h4><a class="white" href="#">Sinister</a></h4>
+                    <span><a class="text-grey bold" href="#">Nome Brano</a></span>
                 </div>
-                <div class="marginleft2">
-                    <span class="text-grey marginright1"><i class="fa-regular fa-heart"></i></span>
-                    <span class="text-grey marginright1"><i class="fa-regular fa-folder"></i></span>
+                <div id="songname-icons">
+                    <span class="text-grey"><i class="fa-regular fa-heart"></i></span>
+                    <span class="text-grey"><i class="fa-regular fa-folder"></i></span>
                 </div>
             </div>
 
             <div class="footer-center flex flex-column align-center just-center">
-                <ul class="flex space-between align-center gap2 ls-none">
-                    <li class="white"><i class="fa-solid fa-shuffle"></i></li>
-                    <li class="white"><i class="fa-solid fa-backward-step"></i></li>
-                    <li id="play-icon" class="white"><i class="fa-regular fa-circle-play"></i></li>
-                    <li class="white"><i class="fa-solid fa-forward-step"></i></li>
-                    <li class="white"><i class="fa-solid fa-rotate-right"></i></li>
-                </ul>
-                <div class="flex space-between align-center margintop1 gap1">
+                <div class="flex space-between align-center gap1 ls-none">
+                    <div class="white"><i class="fa-solid fa-shuffle"></i></div>
+                    <div class="white"><i class="fa-solid fa-backward-step"></i></div>
+                    <div id="play-icon" class="white"><i class="fa-regular fa-circle-play"></i></div>
+                    <div class="white"><i class="fa-solid fa-forward-step"></i></div>
+                    <div class="white"><i class="fa-solid fa-rotate-right"></i></div>
+                </div>
+                <div id="playnav" class="flex space-between align-center">
                     <span class="white">0:25</span>
                     <div id="play-bar" class="bg-grey"><div id="play-bar-inside"></div></div>
                     <span class="white">4:35</span>
                 </div>
             </div>
 
-            <div class="footer-right flex space-between align-center">
-                <ul class="flex space-between align-center gap2 ls-none">
+            <div class="footer-right flex flex-end">
+                <ul class="flex space-between align-center ls-none">
                     <li class="white"><i class="fa-solid fa-list"></i></li>
                     <li class="white"><i class="fa-solid fa-desktop"></i></li>
                     <li class="white"><i class="fa-solid fa-volume-high"></i></li>

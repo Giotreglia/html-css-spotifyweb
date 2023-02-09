@@ -14,7 +14,7 @@ html {
     --footer-bg: rgb(40, 40, 40);
     --lime-green: rgb(173, 255, 47);
     --sidebar-width: 60px;
-    --footer-height: 100px;
+    --footer-height: 60px;
 }
 
 /* Utility */
@@ -27,6 +27,10 @@ html {
     display: inline;
 }
 
+.inline-block {
+    display: inline-block;
+}
+
 .flex {
     display: flex;
 }
@@ -37,6 +41,10 @@ html {
 
 .just-center {
     justify-content: center;
+}
+
+.flex-end {
+    justify-content: flex-end;
 }
 
 .align-center {
@@ -61,6 +69,10 @@ html {
 
 .gap2 {
     gap: 2rem;
+}
+
+.height100 {
+    height: 100%;
 }
 
 .text-grey {
@@ -95,6 +107,10 @@ a {
     text-decoration: none;
 }
 
+.margintop0-5 {
+    margin-top: 0.5rem;
+}
+
 .margintop1 {
     margin-top: 1rem;
 }
@@ -125,6 +141,10 @@ a {
 
 .hidden {
     display: none;
+}
+
+.font06 {
+    font-size: 0.6rem;
 }
 
 .font08 {
@@ -272,48 +292,56 @@ footer {
 }
 
 .footer-container {
-    padding: 1.1rem 1rem;
+    padding: 0.9rem 1rem;
     height: 100%;
+    width: 100%;
 }
 
 .footer-left, .footer-center, .footer-right {
     height: 100%;
+    width: calc(100% /3);
 }
 
 #playbar-img {
     height: 100%;
 }
 
-.footer-left i {
-    font-size: 1.4rem;
-}
-
-.footer-center ul {
-    width: 250px;
+.footer-left i, .footer-right i {
+    font-size: 0.8rem;
 }
 
 .footer-center i {
-    font-size: 1.4rem;
+    font-size: 0.8rem;
 }
 
 #play-icon i {
-    font-size: 2.2rem;
+    font-size: 1.4rem;
+    margin: 0 1rem;
 }
 
 #play-bar {
-    height: 5px;
-    width: 400px;
+    height: 4px;
+    width: 25vw;
     border-radius: 2rem;
 }
 
+#playnav {
+    margin-top: 0.5rem;
+    gap: 1rem;
+}
+
+#playnav span {
+    font-size: 0.5rem;
+}
+
 #play-bar-small {
-    height: 5px;
-    width: 120px;
+    height: 4px;
+    width: 12vw;
     border-radius: 2rem;
 }
 
 #play-bar-inside {
-    height: 5px;
+    height: 4px;
     width: 40%;
     border-radius: 2rem;
     background-color: white;
@@ -324,6 +352,19 @@ footer {
     width: 40%;
     border-radius: 2rem;
     background-color: white;
+}
+
+#songname {
+    font-size: 0.6rem;
+    margin-left: 0.5rem;
+}
+
+#songname-icons span {
+    margin-right: 1rem;
+}
+
+.footer-right ul {
+    gap: 0.5rem;
 }
 
 /* Responsive */
@@ -350,6 +391,10 @@ footer {
     .borderbottom-grey {
         border-bottom: 1px solid var(--text-lightgrey);
         padding-bottom: 10px;
+    }
+
+    .navbar a {
+        font-size: 1rem;
     }
 }
 
