@@ -91,8 +91,8 @@ html {
     text-transform: capitalize;
 }
 
-.line-height2-5 {
-    line-height: 2.5rem;
+.line-height2 {
+    line-height: 2rem;
 }
 
 .bold {
@@ -254,12 +254,12 @@ main {
 #content {
     background-color: var(--content-bg-light);
     width: calc(100% - var(--sidebar-width));
-    padding: calc(100px + 1rem) 1rem 2rem;
+    padding: calc(80px + 1rem) 1rem 2rem;
 }
 
 #cta {
     background-color: rgba(0, 0, 0, 0.5);
-    height: 100px;
+    height: 80px;
     position: fixed;
     top: 0;
     left: var(--sidebar-width);
@@ -373,7 +373,7 @@ footer {
 
 @media screen and (min-width:576px) {
     :root {
-        --sidebar-width: 250px;
+        --sidebar-width: 200px;
     }
 
     #sidebar li {
@@ -394,9 +394,26 @@ footer {
     }
 
     .navbar a {
-        font-size: 1rem;
+        font-size: 0.8rem;
+    }
+
+    #pl-list a {
+        font-size: 0.8rem;
+    }
+
+    .btn {
+        font-size: 0.7rem;
+    }
+
+    .music-item h4 {
+        font-size: 0.9rem;
+    }
+
+    .music-item span {
+        font-size: 0.7rem;
     }
 }
+
 
 /* Size S */
 
