@@ -15,80 +15,106 @@
 <body class="debug">
 
     <!-- Main -->
-    <main class="flex">
+    <main class="flex overflow-hidden">
         <aside id="sidebar">
-            <div class="sidebar-container flex flex-column space-between">
-
-                <!-- Nav-top -->
-                <ul class="nav-top flex flex-column space-between align-center gap1">
-                    <li>
-                        <a href="#">
-                            <div id="logo-container">
-                                <img id="logo-small" src="img/logo-small.svg" alt="logo spotify">
-                                <img id="logo-big" class="hidden marginleft2" src="img/logo.svg" alt="logo Spotify">
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <div class="nav-top-container white margintop2 flex align-center">
-                                <img class="nav-icon" src="img/home.svg" alt="icona home">
-                                <span class="hidden bold margineleft1 font08">Home</span>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <div class="nav-top-container flex align-center">
-                                <img class="nav-icon" src="img/search.svg" alt="icona search">
-                                <span class="hidden bold margineleft1 text-grey font08">Cerca</span>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <div class="nav-top-container flex align-center">
-                                <img class="nav-icon" src="img/libreria.svg" alt="icona libreria">
-                                <span class="hidden bold margineleft1 text-grey font08">La tua libreria</span>
-                            </div>
-                        </a>
-                    </li>
-                </ul>
+            <div class="sidebar-container flex flex-column space-between overflow-hidden">
+                <div id="sidebar-top" class="sidebar-container flex flex-column overflow-hidden">
+                    <!-- Nav-top -->
+                    <ul class="nav-top flex flex-column space-between align-center gap1">
+                        <li>
+                            <a href="#">
+                                <div id="logo-container">
+                                    <img id="logo-small" src="img/logo-small.svg" alt="logo spotify">
+                                    <img id="logo-big" class="hidden marginleft2" src="img/logo.svg" alt="logo Spotify">
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="nav-top-container white margintop2 flex align-center">
+                                    <img class="nav-icon" src="img/home.svg" alt="icona home">
+                                    <span class="hidden bold margineleft1 font08">Home</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="nav-top-container flex align-center">
+                                    <img class="nav-icon" src="img/search.svg" alt="icona search">
+                                    <span class="hidden bold margineleft1 text-grey font08">Cerca</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="nav-top-container flex align-center">
+                                    <img class="nav-icon" src="img/libreria.svg" alt="icona libreria">
+                                    <span class="hidden bold margineleft1 text-grey font08">La tua libreria</span>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <!-- Playlist list -->
+                    <div class="hidden">
+                        <h2 class="white margineleft1">Playlist</h2>
+    
+                        <div class="flex align-center margintop1">
+                            <div id="add-pl" class="bg-grey margineleft1"><i class="fa-solid fa-plus"></i></div>
+                            <span class="block text-grey margineleft1">Crea Playlist</span>
+                        </div>
+    
+                        <ul id="pl-list" class="margineleft1 margintop1 overflow-scroll">
+                            <li><a class="a-none text-grey line-height2-5" href="">Nome Playlist</a></li>
+                            <li><a class="a-none text-grey line-height2-5" href="">Nome Playlist</a></li>
+                            <li><a class="a-none text-grey line-height2-5" href="">Nome Playlist</a></li>
+                            <li><a class="a-none text-grey line-height2-5" href="">Nome Playlist</a></li>
+                            <li><a class="a-none text-grey line-height2-5" href="">Nome Playlist</a></li>
+                            <li><a class="a-none text-grey line-height2-5" href="">Nome Playlist</a></li>
+                            <li><a class="a-none text-grey line-height2-5" href="">Nome Playlist</a></li>
+                            <li><a class="a-none text-grey line-height2-5" href="">Nome Playlist</a></li>
+                            <li><a class="a-none text-grey line-height2-5" href="">Nome Playlist</a></li>
+                            <li><a class="a-none text-grey line-height2-5" href="">Nome Playlist</a></li>
+                        </ul>
+                    </div>
+                </div>
 
                 <!-- Nav Bottom -->
-                <ul class="nav-top flex flex-column space-between align-center gap1">
-                    <li>
-                        <a href="#">
-                            <div class="nav-top-container flex borderbottom-grey align-center">
-                                <img class="nav-icon" src="img/download.svg" alt="icona download">
-                                <span class="hidden bold margineleft1 text-grey font08">Installa App</span>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <div class="nav-top-container white flex align-center">
-                                <img class="nav-icon rounded overflow-hidden bg-grey" src="img/profile.svg" alt="icona search">
-                                <span class="hidden bold margineleft1 white">John Doe</span>
-                            </div>
-                        </a>
-                    </li>
-                </ul>
+                <div id="nav-bottom-container" class="marginbottom2">
+                    <ul class="nav-top flex flex-column space-between align-center gap1">
+                        <li>
+                            <a href="#">
+                                <div class="nav-top-container flex borderbottom-grey align-center">
+                                    <img class="nav-icon" src="img/download.svg" alt="icona download">
+                                    <span class="hidden bold margineleft1 text-grey font08">Installa App</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="nav-top-container white flex align-center">
+                                    <img class="nav-icon rounded overflow-hidden bg-grey" src="img/profile.svg" alt="icona search">
+                                    <span class="hidden bold margineleft1 white">John Doe</span>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </aside>
 
         <div id="content" class="overflow-scroll">
 
             <!-- Call to action -->
-            <div id="cta" class="flex align-center">
+            <div id="cta" class="flex align-center overflow-hidden">
                 <span class="btn"><a class="white" href="#">EFFETTUA L'UPGRADE</a></span>
             </div>
 
             <!-- Main content -->
 
             <!-- Content navbar -->
-            <nav class="text-grey capitalize bold">
-                <ul class="navbar flex ls-none just-center align-item-center wrap gap2">
+            <nav class="text-grey capitalize bold font08">
+                <ul class="navbar flex ls-none just-center wrap gap2">
                     <li class="nav-item"><a class="a-none text-grey" href="">IN EVIDENZA</a></li>
                     <li class="nav-item"><a class="a-none text-grey" href="">PODCAST</a></li>
                     <li class="nav-item"><a class="a-none text-grey" href="">CLASSIFICHE</a></li>

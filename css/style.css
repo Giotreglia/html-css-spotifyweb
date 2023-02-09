@@ -79,6 +79,10 @@ html {
     text-transform: capitalize;
 }
 
+.line-height2-5 {
+    line-height: 2.5rem;
+}
+
 .bold {
     font-weight: bold;
 }
@@ -123,6 +127,10 @@ a {
     font-size: 0.8rem;
 }
 
+.font09 {
+    font-size: 0.9rem;
+}
+
 .text-center {
     text-align: center;
 }
@@ -155,11 +163,16 @@ main {
 
 #sidebar {
     width: var(--sidebar-width);
+    height: calc(100vh - var(--footer-height));
     background-color: black;
 }
 
 .sidebar-container {
     height: 100%;
+}
+
+#sidebar-top {
+    min-height: 400px;
 }
 
 .nav-top {
@@ -173,6 +186,10 @@ main {
 
 .nav-top-container i {
     font-size: 1.3rem;
+}
+
+#nav-bottom-container {
+    margin-bottom: 0;
 }
 
 .nav-icon {
@@ -197,6 +214,16 @@ main {
     width: 150px;
 }
 
+#add-pl {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+}
+
+#add-pl i {
+    font-size: 1.5rem;
+    line-height: 40px;
+}
 
 /* Content */
 
