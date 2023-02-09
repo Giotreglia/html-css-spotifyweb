@@ -13,7 +13,7 @@ html {
     --content-bg-light: rgb(20, 25, 34);
     --footer-bg: rgb(40, 40, 40);
     --lime-green: rgb(173, 255, 47);
-    --sidebar-width: 60px;
+    --sidebar-width: 50px;
     --footer-height: 60px;
 }
 
@@ -239,14 +239,14 @@ main {
 }
 
 #add-pl {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     text-align: center;
 }
 
 #add-pl i {
     font-size: 1.5rem;
-    line-height: 40px;
+    line-height: 30px;
 }
 
 /* Content */
@@ -292,7 +292,7 @@ footer {
 }
 
 .footer-container {
-    padding: 0.9rem 1rem;
+    padding: 0.9rem 0.2rem;
     height: 100%;
     width: 100%;
 }
@@ -307,11 +307,11 @@ footer {
 }
 
 .footer-left i, .footer-right i {
-    font-size: 0.8rem;
+    font-size: 0.6rem;
 }
 
 .footer-center i {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
 }
 
 #play-icon i {
@@ -359,7 +359,12 @@ footer {
     margin-left: 0.5rem;
 }
 
-#songname-icons span {
+#songname h4 {
+    font-size: 0.7rem;
+}
+
+#songname-icons {
+    margin-left: 0.5rem;
     margin-right: 1rem;
 }
 
@@ -425,15 +430,69 @@ footer {
 
 @media screen and (min-width:992px) {
 
+    :root {
+        --sidebar-width: 250px;
+    }
+
     .music-item-container {
         width: 25%;
     }
+
+    .navbar a {
+        font-size: 0.9rem;
+    }
+
+    .music-item h4 {
+        font-size: 1rem;
+    }
+
+    .music-item span {
+        font-size: 0.8rem;
+    }
+
+    #songname h4 {
+        font-size: 0.9rem;
+    }
+
+    #songname span {
+        font-size: 0.7rem;
+    }
+
+    #songname-icons {
+        margin-left: 2rem;
+    }
+
+    #songname-icons i,  .footer-right i {
+        font-size: 1rem;
+        margin: 0 0.5rem;
+    }
+
+    .footer-center i {
+        font-size: 1.2rem;
+    }
+
+    #play-icon i {
+        font-size: 1.5rem;
+    }
+
+    #play-bar {
+        width: 30vw;
+    }
+
+    #play-bar-small {
+        width: 15vw;
+    }
+
+
+}
     
 }
 
 /* Size LG */
 
 @media screen and (min-width:1200px) {
+
+    :root
 
     .music-item-container {
         width: calc(100% / 6);
