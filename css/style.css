@@ -411,6 +411,24 @@ footer {
     display: block;
 }
 
+.lime-line {
+    width: 0px;
+    position: absolute;
+    top: 25px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    height: 2px;
+    background-color: var(--lime-green);
+}
+
+.lime-line {
+    transition: all 0.3s;
+}
+
+.nav-item:hover .lime-line {
+    width: 40px;
+}
+
 /* Responsive */
 
 /* Size XS */
@@ -456,6 +474,7 @@ footer {
     .music-item span {
         font-size: 0.7rem;
     }
+
 }
 
 
