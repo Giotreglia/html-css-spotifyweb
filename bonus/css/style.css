@@ -60,6 +60,10 @@ html {
     flex-wrap: wrap;
 }
 
+.overflow-x-scroll {
+    overflow-x: scroll;
+}
+
 .flex-column {
     flex-direction: column;
 }
@@ -285,10 +289,11 @@ main {
     justify-content: flex-end;
     padding-right: 2rem;
     font-weight: bold;
+    z-index: 9999;
 }
 
 .music-item-container {
-    width: 50%;
+    min-width: 220px;
     padding: 0.5rem;
 }
 
