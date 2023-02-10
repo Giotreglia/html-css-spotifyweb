@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <title>Spotify</title>
+</head>
+<body class="debug">
+
+    <!-- Main -->
+    <main class="flex overflow-hidden">
+        <aside id="sidebar">
+            <div class="sidebar-container flex flex-column space-between overflow-hidden">
+                <div id="sidebar-top" class="sidebar-container flex flex-column overflow-hidden">
+                    <!-- Nav-top -->
+                    <ul class="nav-top flex flex-column space-between align-center gap1">
+                        <li>
+                            <a href="#">
+                                <div id="logo-container">
+                                    <img id="logo-small" src="img/logo-small.svg" alt="logo spotify">
+                                    <img id="logo-big" class="hidden" src="img/logo.svg" alt="logo Spotify">
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="nav-top-container white margintop2 flex align-center relative">
+                                    <img class="nav-icon" src="img/home.svg" alt="icona home">
+                                    <span class="hidden bold marginleft1 font08 hover-white pointer">Home</span>
+                                    <div class="lime-line-vert"></div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="nav-top-container flex align-center relative">
+                                    <img class="nav-icon" src="img/search.svg" alt="icona search">
+                                    <span class="hidden bold marginleft1 text-grey font08 hover-white pointer">Cerca</span>
+                                    <div class="lime-line-vert"></div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="nav-top-container flex align-center relative">
+                                    <img class="nav-icon" src="img/libreria.svg" alt="icona libreria">
+                                    <span class="hidden bold marginleft1 text-grey font08 hover-white pointer">La tua libreria</span>
+                                    <div class="lime-line-vert"></div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <!-- Playlist list -->
+    
+                    <h2 class="white marginleft1 hidden">Playlist</h2>
+
+                    <div id="add-pl-container" class="align-center margintop1 hidden pointer">
+                        <div id="add-pl" class="bg-grey marginleft1"><i class="fa-solid fa-plus"></i></div>
+                        <div id="add-pl-text" class="text-grey marginleft1 bold">Crea Playlist</div>
+                    </div>
+
+                    <ul id="pl-list" class="marginleft1 margintop1 overflow-scroll hidden">
+                        <li><a class="a-none text-grey line-height2 bold hover-white pointer" href="">Nome Playlist</a></li>
+                        <li><a class="a-none text-grey line-height2 bold hover-white pointer" href="">Nome Playlist</a></li>
+                        <li><a class="a-none text-grey line-height2 bold hover-white pointer" href="">Nome Playlist</a></li>
+                        <li><a class="a-none text-grey line-height2 bold hover-white pointer" href="">Nome Playlist</a></li>
+                        <li><a class="a-none text-grey line-height2 bold hover-white pointer" href="">Nome Playlist</a></li>
+                        <li><a class="a-none text-grey line-height2 bold hover-white pointer" href="">Nome Playlist</a></li>
+                        <li><a class="a-none text-grey line-height2 bold hover-white pointer" href="">Nome Playlist</a></li>
+                        <li><a class="a-none text-grey line-height2 bold hover-white pointer" href="">Nome Playlist</a></li>
+                        <li><a class="a-none text-grey line-height2 bold hover-white pointer" href="">Nome Playlist</a></li>
+                        <li><a class="a-none text-grey line-height2 bold hover-white pointer" href="">Nome Playlist</a></li>
+                    </ul>
+                </div>
+
+                <!-- Nav Bottom -->
+                <div id="nav-bottom-container" class="marginbottom2">
+                    <ul class="nav-top flex flex-column space-between align-center gap1">
+                        <li>
+                            <a href="#">
+                                <div class="nav-top-container flex borderbottom-grey align-center">
+                                    <img class="nav-icon" src="img/download.svg" alt="icona download">
+                                    <span class="hidden bold marginleft1 text-grey font08 hover-white pointer">Installa App</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="nav-top-container white flex align-center">
+                                    <img class="nav-icon rounded overflow-hidden bg-grey" src="img/profile.svg" alt="icona search">
+                                    <span class="hidden bold marginleft1 white">John Doe</span>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </aside>
+
+        <div id="content" class="overflow-scroll">
+
+            <!-- Call to action -->
+            <div id="cta" class="flex align-center">
+                <span class="btn"><a class="white" href="#">EFFETTUA L'UPGRADE</a></span>
+            </div>
+
+            <!-- Main content -->
+
+            <!-- Content navbar -->
+            <nav class="text-grey capitalize bold font08">
+                <ul class="navbar flex ls-none just-center wrap gap1">
+                    <li class="nav-item relative">
+                        <a class="a-none text-grey hover-white pointer" href="">IN EVIDENZA</a>
+                        <div class="lime-line"></div>
+                    </li>
+                    <li class="nav-item relative">
+                        <a class="a-none text-grey hover-white pointer" href="">PODCAST</a>
+                        <div class="lime-line"></div>
+                    </li>
+                    <li class="nav-item relative">
+                        <a class="a-none text-grey hover-white pointer" href="">CLASSIFICHE</a>
+                        <div class="lime-line"></div>
+                    </li>
+                    <li class="nav-item relative">
+                        <a class="a-none text-grey hover-white pointer" href="">GENERI E MOOD</a>
+                        <div class="lime-line"></div>
+                    </li>
+                    <li class="nav-item relative">
+                        <a class="a-none text-grey hover-white pointer" href="">NUOVE USCITE</a>
+                        <div class="lime-line"></div>
+                    </li>
+                    <li class="nav-item relative">
+                        <a class="a-none text-grey hover-white pointer" href="">SCOPRI</a>
+                        <div class="lime-line"></div>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- Sezione Recently played -->
+            <section id="recently-played" class="white">
+
+                <h1 class="margintop2 marginbottom2">Recently Played</h1>
+
+                <div class="content-container flex align-content-start wrap">
+                    <div class="music-item-container">
+                        <div class="music-item text-center relative">
+                            <div class="relative">
+                                <img src="img/metal_lifting.jpg" alt="metal album">
+                                <div class="overlay absolute white"><i class="fa-regular fa-circle-play"></i></div>
+                            </div>
+                            <h4 class="margintop1">Heavy Metal</h4>
+                            <span class="text-grey bold">Subtitle</span>
+                        </div>
+                    </div>
+                    <div class="music-item-container">
+                        <div class="music-item text-center">
+                            <div class="relative">
+                                <img src="img/stranger.jpeg" alt="stranger things ost">
+                                <div class="overlay absolute flex center white"><i class="fa-regular fa-circle-play"></i></div>
+                            </div>
+                            <h4 class="margintop1">Stranger Thlngs. Vol. I (a Netflix Ori Inal Series Soun:track)</h4>
+                            <span class="text-grey bold">Kyle Dixon & Micheal</span>
+                        </div>
+                    </div>
+                    <div class="music-item-container">
+                        <div class="music-item text-center">
+                            <div class="relative">
+                                <img src="img/aquietplace.jpeg" alt="a quiet place">
+                                <div class="overlay absolute flex center white"><i class="fa-regular fa-circle-play"></i></div>
+                            </div>
+                            <h4 class="margintop1">A quiet place</h4>
+                            <span class="text-grey bold">Subtitle</span>
+                        </div>
+                    </div>
+                    <div class="music-item-container">
+                        <div class="music-item text-center">
+                            <div class="relative">
+                                <img src="img/split.jpeg" alt="split">
+                                <div class="overlay absolute flex center white"><i class="fa-regular fa-circle-play"></i></div>
+                            </div>
+                            <h4 class="margintop1">Split</h4>
+                            <span class="text-grey bold">Subtitle</span>
+                        </div>
+                    </div>
+                    <div class="music-item-container">
+                        <div class="music-item text-center">
+                            <div class="relative">
+                                <img src="img/cure.jpeg" alt="cure">
+                                <div class="overlay absolute flex center white"><i class="fa-regular fa-circle-play"></i></div>
+                            </div>
+                            <h4 class="margintop1">A cure for wellness</h4>
+                            <span class="text-grey bold">Subtitle</span>
+                        </div>
+                    </div>
+                    <div class="music-item-container">
+                        <div class="music-item text-center">
+                            <div class="relative">
+                                <img src="img/sinister.jpeg" alt="sinister">
+                                <div class="overlay absolute flex center white"><i class="fa-regular fa-circle-play"></i></div>
+                            </div>
+                            <h4 class="margintop1">Sinister</h4>
+                            <span class="text-grey bold">Subtitle</span>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+            
+            <!-- Sezione Created for -->
+            <section id="created-for" class="white">
+
+                <div class="marginbottom2">
+                    <h1 class="margintop2">Creato per John Doe</h1>
+                    <span class="text-grey bold margintop0-5 font08">Più ascolti. più accurati saranno i suggerimenti.</span>
+                </div>
+
+                <div class="content-container flex align-content-start wrap">
+                    <div class="music-item-container">
+                        <div class="music-item text-center">
+                            <div class="relative">
+                                <img src="img/radar.jpeg" alt="release radar">
+                                <div class="overlay absolute flex center white"><i class="fa-regular fa-circle-play"></i></div>
+                            </div>
+                            <h4 class="margintop1">Release Radar</h4>
+                        </div>
+                    </div>
+                    <div class="music-item-container">
+                        <div class="music-item text-center">
+                            <div class="relative">
+                                <img src="img/mixdaily.jpeg" alt="daily mix">
+                                <div class="overlay absolute flex center white"><i class="fa-regular fa-circle-play"></i></div>
+                            </div>
+                            <h4 class="margintop1">Daily Mix</h4>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+
+            <!-- Sezione Most Popular -->
+            <section id="most-popular" class="white">
+
+                <div class="marginbottom2">
+                    <h1 class="margintop2">Artisti più popolari</h1>
+                    <span class="text-grey bold margintop0-5 font08">Più ascolti. più accurati saranno i suggerimenti.</span>
+                </div>
+                <div class="content-container flex align-content-start wrap">
+                    <div class="music-item-container">
+                        <div class="music-item text-center">
+                            <div class="relative">
+                                <img class="rounded overflow-hidden" src="img/youg.jpeg" alt="Lana del rey">
+                                <div class="overlay absolute flex center white rounded overflow-hidden"><i class="fa-regular fa-circle-play"></i></div>
+                            </div>
+                            <h4 class="margintop1">Lana Del Rey</h4>
+                        </div>
+                    </div>
+                    <div class="music-item-container">
+                        <div class="music-item text-center">
+                            <div class="relative">
+                                <img class="rounded overflow-hidden" src="img/einaudi.jpeg" alt="Einaudi">
+                                <div class="overlay absolute flex center white rounded overflow-hidden"><i class="fa-regular fa-circle-play"></i></div>
+                            </div>
+                            <h4 class="margintop1">Ludovico Einaudi</h4>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container flex space-between align-center">
+            <div class="footer-left flex align-center">
+                <a class="height100" href="#"><img id="playbar-img" src="img/sinister.jpeg" alt="copertina sinister"></a>
+                <div id="songname">
+                    <h4><a class="white" href="#">Sinister</a></h4>
+                    <span><a class="text-grey bold" href="#">Nome Brano</a></span>
+                </div>
+                <div id="songname-icons">
+                    <span class="text-grey hover-white pointer"><i class="fa-regular fa-heart"></i></span>
+                    <span class="text-grey hover-white pointer"><i class="fa-regular fa-folder"></i></span>
+                </div>
+            </div>
+
+            <div class="footer-center flex flex-column align-center just-center">
+                <div class="flex space-between align-center gap1 ls-none">
+                    <div class="white pointer"><i class="fa-solid fa-shuffle"></i></div>
+                    <div class="white pointer"><i class="fa-solid fa-backward-step"></i></div>
+                    <div id="play-icon" class="white"><i class="fa-regular fa-circle-play"></i></div>
+                    <div class="white pointer"><i class="fa-solid fa-forward-step"></i></div>
+                    <div class="white pointer"><i class="fa-solid fa-rotate-right"></i></div>
+                </div>
+                <div id="playnav" class="flex align-center">
+                    <span class="white">0:25</span>
+                    <div id="play-bar" class="bg-grey pointer"><div id="play-bar-inside" class="relative"><div id="play-bar-cursor"></div></div></div>
+                    <span class="white">4:35</span>
+                </div>
+            </div>
+
+            <div class="footer-right flex flex-end">
+                <ul class="flex space-between align-center ls-none">
+                    <li class="white pointer"><i class="fa-solid fa-list"></i></li>
+                    <li class="white pointer"><i class="fa-solid fa-desktop"></i></li>
+                    <li class="white pointer"><i class="fa-solid fa-volume-high"></i></li>
+                    <li class="white pointer">
+                        <div id="play-bar-small" class="bg-grey pointer"><div id="play-bar-inside-small" class="relative"><div id="play-bar-cursor-small"></div></div></div>
+                    </li>
+                </ul>
+
+            </div>
+
+        </div>
+    </footer>
+    
+</body>
+</html>
