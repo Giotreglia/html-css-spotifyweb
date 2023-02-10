@@ -14,7 +14,7 @@ html {
     --footer-bg: rgb(40, 40, 40);
     --lime-green: rgb(173, 255, 47);
     --sidebar-width: 50px;
-    --footer-height: 60px;
+    --footer-height: 120px;
 }
 
 /* Utility */
@@ -61,7 +61,7 @@ html {
 }
 
 .overflow-x-scroll {
-    overflow-x: scroll;
+    overflow-x: auto;
 }
 
 .flex-column {
@@ -317,6 +317,10 @@ footer {
     height: var(--footer-height);
 }
 
+#big {
+    display: none;
+}
+
 .footer-container {
     padding: 0.9rem 0.2rem;
     height: 100%;
@@ -533,11 +537,133 @@ footer {
 
 /* Responsive */
 
-/* Size XS */
+/* Bonus footer mobile */
+
+@media screen and (min-width: 0px ) and (max-width: 576px) {
+
+    #mobile .footer-container {
+        flex-wrap: wrap;
+        padding: 0 0.5rem;
+    }
+    
+    #mobile .footer-center {
+        order: -1;
+        width: 100%;
+        position: relative;
+        height: 35px;
+    }
+
+    #mobile .footer-left  {
+        height: 40px;
+        width: 85%;
+        align-items: flex-end;
+    }
+
+    #mobile .footer-right {
+        width: 15%;
+        height: 40px;
+        justify-content: flex-start;
+    }
+
+    #mobile .footer-left i {
+        font-size: 1rem;
+        margin-right: 0.5rem;
+        margin-top: 1rem;
+    }
+
+    #mobile #songname h4, #mobile #songname span {
+        display: inline-block;
+        margin-top: 1rem;
+    }
+
+    #mobile #songname h4 a {
+        font-size: 1.2rem;
+        margin-right: 1rem;
+    }
+
+    #mobile #songname span a {
+        font-size: 0.8rem;
+    }
+
+    #mobile #songname-icons {
+        display: none;
+    }
+
+    #mobile .footer-right ul {
+        width: 100%;
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+
+    #mobile .footer-right ul i {
+        font-size: 1rem;
+        margin-left: 1rem;
+    }
+
+    #mobile #play-icons {
+        gap: 2rem;
+    }
+
+    #mobile .footer-center i {
+        font-size: 1.5rem;
+    }
+
+    #mobile #play-icon i {
+        font-size: 2.5rem;
+    }
+
+    #mobile #playbar-img {
+        display: none;
+    }
+
+    #mobile #playnav {
+        position: absolute;
+        top: -10px;
+        left: 0;
+        width: 100%;
+        justify-content: center;
+    }
+
+    #mobile #play-icons {
+        position: absolute;
+        top: 1.5rem;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+
+    #mobile #play-bar {
+        width: 80vw;
+        height: 6px;
+    }
+
+    #mobile #play-bar-inside {
+        height: 6px;
+    }
+
+    #mobile #play-bar-small, #volume {
+        display: none;
+    }   
+
+    #up i {
+        color: var(--lime-green);
+    }
+   
+}
+
+/* Size S */
 
 @media screen and (min-width:576px) {
     :root {
         --sidebar-width: 200px;
+        --footer-height: 60px;
+    }
+
+    #big {
+        display: block;
+    }
+
+    #mobile {
+        display: none;
     }
 
     #sidebar li {
@@ -584,13 +710,13 @@ footer {
 }
 
 
-/* Size S */
+/* Size MD */
 
 @media screen and (min-width:768px) {
     
 }
 
-/* Size MD */
+/* Size LG */
 
 @media screen and (min-width:992px) {
 
@@ -651,7 +777,7 @@ footer {
 }
     
 
-/* Size LG */
+/* Size XL */
 
 @media screen and (min-width:1200px) {
 
@@ -666,7 +792,7 @@ footer {
 
 /* Call to action  */
 
-@media screen and (min-height:500px) {
+@media screen and (min-height:650px) {
     #cta {
         opacity: 1;
     }
