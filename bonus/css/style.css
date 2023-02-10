@@ -264,6 +264,7 @@ main {
 
 #add-pl-container {
     display: flex;
+    opacity: 0;
 }
 
 #add-pl i {
@@ -574,6 +575,10 @@ footer {
 
     .music-item span {
         font-size: 0.7rem;
+    }
+
+    #add-pl-container {
+        opacity: 1;
     }
 
 }
