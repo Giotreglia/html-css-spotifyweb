@@ -276,7 +276,7 @@ main {
 #content {
     background-color: var(--content-bg-light);
     width: calc(100% - var(--sidebar-width));
-    padding: calc(80px + 1rem) 1rem 2rem;
+    padding: 2rem 1rem 2rem;
 }
 
 #cta {
@@ -290,6 +290,8 @@ main {
     padding-right: 2rem;
     font-weight: bold;
     z-index: 9999;
+    opacity: 0;
+    transition: all 1s;
 }
 
 .music-item-container {
@@ -657,4 +659,14 @@ footer {
     }
 }
 
+/* Call to action  */
 
+@media screen and (min-height:500px) {
+    #cta {
+        opacity: 1;
+    }
+
+    #content {
+        padding-top: calc(80px + 1rem);
+    }
+}
