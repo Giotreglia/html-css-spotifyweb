@@ -258,6 +258,10 @@ main {
     text-align: center;
 }
 
+#add-pl-container {
+    display: flex;
+}
+
 #add-pl i {
     font-size: 1.5rem;
     line-height: 30px;
@@ -472,8 +476,12 @@ footer {
     cursor: pointer;
 }
 
-.playlist-hover:hover #add-pl {
+#add-pl-container:hover #add-pl {
     background-color: white;
+}
+
+#add-pl-container:hover #add-pl-text {
+    color: white;
 }
 
 .playlist-hover:hover .playlist-hover span {
