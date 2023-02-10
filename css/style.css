@@ -339,6 +339,8 @@ footer {
     border-radius: 2rem;
 }
 
+
+
 #playnav {
     margin-top: 0.5rem;
     gap: 1rem;
@@ -359,6 +361,18 @@ footer {
     width: 40%;
     border-radius: 2rem;
     background-color: white;
+}
+
+#play-bar-cursor, #play-bar-cursor-small {
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: white;
+    right: 0;
+    top: 0;
+    transform: translate(0, -35%);
+    opacity: 0;
 }
 
 #play-bar-inside-small {
@@ -471,6 +485,11 @@ footer {
     cursor: pointer;
 }
 
+#play-icon:active {
+    scale: 1.1;
+    cursor: pointer;
+}
+
 #cta .btn:hover {
     scale: 1.1;
 }
@@ -478,6 +497,23 @@ footer {
 #cta .btn:active {
     scale: 1;
 }
+
+#play-bar:hover #play-bar-inside {
+    background-color: var(--lime-green);
+}
+
+#play-bar:hover #play-bar-cursor {
+    opacity: 1;
+}
+
+#play-bar-small:hover #play-bar-inside-small {
+    background-color: var(--lime-green);
+}
+
+#play-bar-small:hover #play-bar-cursor-small {
+    opacity: 1;
+}
+
 
 /* Responsive */
 
@@ -607,3 +643,5 @@ footer {
         padding: 0.9rem 1rem;
     }
 }
+
+
